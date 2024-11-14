@@ -13,6 +13,9 @@ const restauranteSchema = new Schema({
         type: Number,
         required: [true, "Debe ingresar la valoracion."],
     },
+    deliveryTime: {
+        type: Number
+    },
     categoria: {
         type: String,
         enum: ['restaurante', 'mercado', 'heladeria', 'bodega']

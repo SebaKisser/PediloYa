@@ -5,6 +5,7 @@ import Register from './pages/Session/Register';
 import Login from "./pages/Session/Login";
 import UserList from "./pages/User/UserList";
 import Home from "./pages/Structure/Home";
+import Restaurantes from "./pages/Structure/Restaurantes";
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
 				<Route path='/login' element={<Login></Login>}></Route>
 				<Route path='/users' element={<UserList></UserList>}></Route>
 				<Route path='/home' element={<Home></Home>}></Route>
+				<Route path="/restaurantes" element={<Restaurantes/>}/>
 			</Routes>
 
 		</BrowserRouter>
