@@ -19,7 +19,7 @@ const Login = () => {
 
 		try {
 
-			const response = await axios.post('http://localhost:8000/api/session', loginForm, { withCredentials: true });
+			const response = await axios.post('/api/session', loginForm, { withCredentials: true });
 			const data = response.data;
 			const status = response.status;
 			console.log(data, status);

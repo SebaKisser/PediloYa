@@ -10,7 +10,7 @@ const UserNavbar = () => {
 
 	const handleLogout = async () => {
 		try {
-			const response = await axios.delete('http://localhost:8000/api/session/', { withCredentials: true});
+			const response = await axios.delete('/api/session/', { withCredentials: true});
 			const data = response.data;
 			console.log(data);
 			navigate('/login');

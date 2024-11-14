@@ -9,7 +9,7 @@ const UserList = () => {
 
 	const fetchUsuarios = async () => {
 		try {
-			const response = await axios.get("http://localhost:8000/api/users");
+			const response = await axios.get("/api/users");
 			const data = response.data;
 			setUsuarios(data); // Guardamos los usuarios en el estado
 		} catch (error) {
@@ -26,7 +26,7 @@ const UserList = () => {
 
 	const handleDelete = async (userId) => {
 		try {
-			const response = await axios.delete(`http://localhost:8000/api/users/${userId}`);
+			const response = await axios.delete(`/api/users/${userId}`);
 			console.log('Usuario eliminado', response.data);
 			fetchUsuarios();
 		} catch (error) {

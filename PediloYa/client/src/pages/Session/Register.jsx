@@ -25,7 +25,7 @@ const Register = () => {
 		e.preventDefault();
 
 		try {
-			const response = await axios.post('http://localhost:8000/api/users', form);
+			const response = await axios.post('/api/users', form);
 			const data = response.data;
 			console.log(data);
 			setErrors({});
@@ -133,7 +133,6 @@ const styles = {
 		height: '100vh',
 		display: 'flex',
 		alignItems: 'center',
-		justifyContent: 'center',
 		flexDirection: 'column',
 	},
 

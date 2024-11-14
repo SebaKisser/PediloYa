@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser';
 import conectarDB from './config/mongoose.config.js';
 import UserRoutes from './src/routes/UserRoutes.js';
 import SessionRoutes from './src/routes/SessionRoutes.js';
+import RestaurantesRoutes from './src/routes/RestaurantesRoutes.js'
 
 dotenv.config();  //Variables de entorno
 const app = express();  //Creamos nuestra instancia del servidor
@@ -24,6 +25,7 @@ app.use(cors(
 //RUTAS
 app.use('/api/users', UserRoutes);
 app.use('/api/session', SessionRoutes);
+app.use('/api/restaurantes', RestaurantesRoutes)
 
 conectarDB();
 

@@ -1,5 +1,5 @@
 
-import { Typography, Grid, Card, CardContent, Container } from '@mui/material';
+import { Typography, Grid, Card, CardContent, Container, Button } from '@mui/material';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import UserNavbar from '../Headers/UserNavbar';
@@ -25,9 +25,11 @@ const Home = () => {
 					<Grid item xs={12} sm={6} md={3}>
 						
 						<Card sx={{ backgroundColor: '#fff8e1', textAlign: 'center' }}>
-							<CardContent>
-								<FastfoodIcon color='primary' sx={{ fontSize: 50 }}></FastfoodIcon>
-								<Typography variant="h6">Restaurantes</Typography>
+							<CardContent >
+								<Button sx={{ textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '2px'}}>
+									<FastfoodIcon color='primary' sx={{ fontSize: 50 }}></FastfoodIcon>
+									<Typography variant="h6">Restaurantes</Typography>
+								</Button>
 							</CardContent>
 						</Card>
 
