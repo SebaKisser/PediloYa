@@ -16,6 +16,9 @@ const restauranteSchema = new Schema({
     deliveryTime: {
         type: Number
     },
+    deliveryPrice: {
+        type: String
+    },
     categoria: {
         type: String,
         enum: ['restaurante', 'mercado', 'heladeria', 'bodega']
